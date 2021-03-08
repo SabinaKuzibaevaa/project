@@ -1,0 +1,67 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AndoidHealth" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/purple</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/grey</item>
+        <item name="colorSecondaryVariant">@color/bright_black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="button_add">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:background">@drawable/button_add</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="button_minus">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:background">@drawable/button_minus_plus</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:textColor">@color/bright_black</item>
+    </style>
+    <style name="button_plus">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:background">@drawable/button_minus_plus</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="button_challenges">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:background">@drawable/button_challenges</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+
+
+
+</resources>

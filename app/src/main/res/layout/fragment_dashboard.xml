@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <TextView
+        android:id="@+id/text_together"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Together"
+        android:textAlignment="gravity"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/container_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        app:backgroundTint="@null">
+
+        <ImageView
+            android:id="@+id/level_profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/level_profile" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/level_profile"
+            android:textSize="19dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:text="Sabina" />
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_toRightOf="@+id/level_profile"
+            android:textSize="33dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:text="Lv.2" />
+
+        <Button
+            android:id="@+id/Add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/name"
+            android:gravity="center"
+            android:text="challenges"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            style="@style/button_challenges" />
+
+    </RelativeLayout>
+
+    <!--
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/container_level"
+        android:background="@drawable/relative_layout"
+        app:backgroundTint="@null">
+
+        <TextView
+            android:id="@+id/age_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:text="My age group average 42%/100%" />
+
+        <TextView
+            android:id="@+id/all_users"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="10dp"
+            android:gravity="right"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/age_group"
+            android:text="All users average 42%/100%" />
+    </RelativeLayout>
+    -->
+
+    <RelativeLayout
+        android:id="@+id/container_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/container_level"
+        android:background="@drawable/relative_layout"
+        app:backgroundTint="@null">
+
+
+        <TextView
+            android:id="@+id/text_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Friends"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/info_connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_friends"
+            android:fontFamily="sans-serif"
+            android:text="Connect and walk togerther."
+            android:textColor="@color/grey"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/find_friends"
+            style="@style/button_challenges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info_connect"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Find friends"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+
+      <!--  <ImageView
+            android:id="@+id/friends"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/"
+            android:foregroundGravity="right"
+            app:srcCompat="@drawable/friends" />
+-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_jungle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/container_friends"
+        android:background="@drawable/relative_layout"
+        app:backgroundTint="@null">
+
+
+        <TextView
+            android:id="@+id/text_jungle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Jungle,March"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/total_steps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_jungle"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Total steps"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/steps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total_steps"
+            android:fontFamily="sans-serif"
+            android:text="11605"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <!--  <ImageView
+              android:id="@+id/friends"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:layout_toRightOf="@+id/"
+              android:foregroundGravity="right"
+              app:srcCompat="@drawable/friends" />
+  -->
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

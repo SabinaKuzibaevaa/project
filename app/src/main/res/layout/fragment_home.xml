@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Items"
+        android:textAlignment="gravity"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/container_exercises"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/relative_layout"
+        app:backgroundTint="@null">
+
+        <ImageView
+            android:id="@+id/exercise"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            app:srcCompat="@drawable/running_man"
+            app:tint="@color/green" />
+
+        <TextView
+            android:id="@+id/text_exercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/exercise"
+            android:fontFamily="sans-serif"
+            android:text="Exercise"
+            android:textColor="@color/green"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/view_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/text_exercise"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:text="View history"
+            android:textColor="@color/grey"
+            android:textSize="16dp" />
+
+
+        <ImageView
+            android:id="@+id/walking"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/exercise"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="35dp"
+            app:srcCompat="@drawable/walking_man"
+            app:tint="@color/white"/>
+
+        <ImageView
+            android:id="@+id/running_man"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/exercise"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@id/walking"
+            app:srcCompat="@drawable/running_man"
+            app:tint="@color/white"/>
+
+        <ImageView
+            android:id="@+id/skipping_rope_man"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_below="@id/exercise"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="32dp"
+            android:layout_toRightOf="@id/running_man"
+            app:srcCompat="@drawable/skipping_rope_man"
+            app:tint="@color/white"/>
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/exercise"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@id/skipping_rope_man"
+            app:srcCompat="@drawable/menu"
+            app:tint="@color/white"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_sleep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/container_exercises"
+        android:background="@drawable/relative_layout"
+        app:backgroundTint="@null">
+
+        <ImageView
+            android:id="@+id/sleep"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            app:srcCompat="@drawable/sleep"
+            app:tint="@color/purple" />
+
+        <TextView
+            android:id="@+id/text_sleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/sleep"
+            android:fontFamily="sans-serif"
+            android:text="Were you sleep?"
+            android:textColor="@color/purple"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/sleep"
+            android:fontFamily="sans-serif"
+            android:gravity="right"
+            android:text="OK"
+            android:textColor="@color/purple"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/time_of_sleep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/sleep"
+            android:fontFamily="sans-serif"
+            android:text="8h 50m | 00:50 - 09:40"
+            android:textColor="@color/grey"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/container_sleep"
+        android:background="@drawable/relative_layout"
+        app:backgroundTint="@null">
+
+        <ImageView
+            android:id="@+id/fork_knife"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            app:srcCompat="@drawable/food"
+            app:tint="@color/green" />
+
+        <TextView
+            android:id="@+id/text_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/fork_knife"
+            android:fontFamily="sans-serif"
+            android:text="Food"
+            android:textColor="@color/green"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/zero_Cal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/fork_knife"
+            android:fontFamily="sans-serif"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/Cal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/text_food"
+            android:layout_toRightOf="@id/zero_Cal"
+            android:fontFamily="sans-serif"
+            android:text="/1831Cal"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/Add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Cal"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            style="@style/button_add" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/container_food"
+        android:background="@drawable/relative_layout"
+        app:backgroundTint="@null">
+
+        <ImageView
+            android:id="@+id/water"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            app:srcCompat="@drawable/glass_of_water"
+            app:tint="@color/blue" />
+
+        <TextView
+            android:id="@+id/text_water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/water"
+            android:fontFamily="sans-serif"
+            android:text="Water"
+            android:textColor="@color/blue"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/zero_glass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/water"
+            android:fontFamily="sans-serif"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/glasses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/water"
+            android:layout_toRightOf="@+id/zero_glass"
+            android:fontFamily="sans-serif"
+            android:text="glasses"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/glasses"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="-"
+            android:textSize="30dp"
+            style="@style/button_minus" />
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/minus"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="+"
+            android:textSize="30dp"
+            style="@style/button_plus" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/manage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/container_water"
+        android:textColor="@color/white"
+        android:text="Manage items >" />
+
+</RelativeLayout>
